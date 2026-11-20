@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'MNNEasyread';
+    /* ตัดเลข 2 ออกเพื่อให้ชื่อตรงกับไฟล์ Mali-Bold.woff ที่คุณมีจริง */
+    src: url('MNNEasyread.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+input {
+    /* ใช้ชื่อฟอนต์ที่ประกาศไว้ใน @font-face */
+    font-family: 'MNNEasyread', sans-serif !important; 
+    font-size: 24px !important;
+    
+    /* บังคับสีน้ำตาลเข้มให้คมชัด */
+    color: #4e342e !important; 
+    text-shadow: none !important; /* ป้องกันการเกลี่ยสีจนดูจาง */
+    -webkit-text-fill-color: #4e342e !important; /* บังคับสีบนเบราว์เซอร์ Chrome */
+    
+    /* ปรับตำแหน่งเพื่อไม่ให้ไม้เอกโดนตัดขอบจนสีจาง */
+    line-height: 0.8 !important;
+    padding-top: 25px !important; 
+    padding-left: 15px !important;
+    padding-bottom: 25px !important;
+
+    /* รักษาดีไซน์เดิมของคุณ */
+    background-color: #dbba8f !important;
+    border-radius: 25px !important;
+    border: none !important;
+    outline: none !important;
+    height: 65px !important;
+    box-sizing: border-box !important;
+}
+
+::placeholder {
+    font-family: 'MNNEasyread', sans-serif !important;
+    color: #d9d9d9 !important; 
+    opacity: 0.8;
+}
